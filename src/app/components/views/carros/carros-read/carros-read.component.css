@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+}
+
+.toolbar{
+    text-align: center;
+}
+
+.clientes{
+    width: 100%;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.mat-header{
+    text-align: end;
+}
+
+.mat-header2{
+    text-align: center;
+}

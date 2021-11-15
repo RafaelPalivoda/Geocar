@@ -1,0 +1,31 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>
+            <span>Cadastro do Carro do Cliente</span>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="carrosForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <input matInput placeholder="Ex. Astra, Vectra, Gol, I30" formControlName="modelo">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Marca: </mat-label>
+                <input matInput placeholder="Ex.: Gm, Volkswagen..." formControlName="marca">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Placa: </mat-label>
+                <input matInput placeholder="Ex.: XXX0X00 ou XXX-0000" formControlName="placa">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Potencia Motor: </mat-label>
+                <input matInput placeholder="Ex.: 1.6, 1.8, 2.0" formControlName="potencia">
+            </mat-form-field>
+            <div class="buttons">
+                <button class="mat-elevation-z8" mat-raised-button color="primary" (click)="create()">Salvar</button>
+                <button class="mat-elevation-z8" mat-raised-button color="warn" (click)="cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

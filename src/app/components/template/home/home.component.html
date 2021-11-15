@@ -1,0 +1,43 @@
+<mat-toolbar color="primary" class="toolbar">
+    <button mat-icon-button class="menu" (click)="snav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="geocar">GeoCar Auto Center</span>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav">
+    <mat-sidenav #snav mode="over" class="inside">
+        <div class="container">
+            <div class="opcoes row mx-3">
+                <div class="col-sm-4 my-2">
+                    <button class="buttons" mat-stroked-button routerLink="/ordem" (click)="snav.toggle()">
+                        Ordem de serviço
+                    </button>
+                </div>
+                <div class="col-sm-4 my-2">
+                    <!-- <button class="buttons" mat-stroked-button>
+                        Serviços
+                        <mat-icon>build</mat-icon>
+                    </button> -->
+                    <button class="buttons" mat-stroked-button routerLink="/servicos" (click)="snav.toggle()">
+                        Cadastrar Serviços
+                    </button>
+                </div>
+                <!-- <div class="col-sm-4 my-2">
+                    <button class="buttons" mat-stroked-button routerLink="/carros" (click)="snav.toggle()">
+                        Carros
+                        <mat-icon>directions_car</mat-icon>
+                    </button>
+                </div> -->
+                <div class="col-sm-4 my-2">
+                    <button class="buttons" mat-stroked-button routerLink="/clientes" (click)="snav.toggle()">
+                        Clientes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

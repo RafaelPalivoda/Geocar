@@ -1,0 +1,31 @@
+<mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>
+        <span>Deletar Ordem de Serviço</span>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>Cliente:</mat-label>
+          <input matInput disabled placeholder="Nome" name="cliente" [(ngModel)]="ordem.cliente">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Carro: </mat-label>
+          <input matInput disabled placeholder="Placa do carro" name="carro" [(ngModel)]="ordem.carro">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Serviço: </mat-label>
+          <input matInput disabled placeholder="Nome do Serviço" name="servico" [(ngModel)]="ordem.servico">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Data de Abertura: </mat-label>
+          <input matInput disabled placeholder="Data de Abertura" mask="d0/M0/0000" name="dtAbertura" [(ngModel)]="ordem.dtAbertura">
+        </mat-form-field>
+        <div class="buttons">
+          <button class="mat-elevation-z8" mat-raised-button color="primary" (click)="delete()">Deletar</button>
+          <button class="mat-elevation-z8" mat-raised-button color="warn" (click)="cancel()">Cancelar</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>

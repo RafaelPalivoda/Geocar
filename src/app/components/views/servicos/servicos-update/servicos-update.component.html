@@ -1,0 +1,27 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>
+            <span>Atualizando Servico</span>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form novalidate>
+            <mat-form-field appearance="fill">
+                <mat-label>Nome do Serviço: </mat-label>
+                <input matInput placeholder="Ex.: Balanceamento, Geometria" name="nome" [(ngModel)]="servicos.nome">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Descrição: </mat-label>
+                <input matInput placeholder="Descrição do serviço" name="descricao" [(ngModel)]="servicos.descricao">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Valor do serviço: </mat-label>
+                <input matInput placeholder="Digite somente numeros" currencyMask name="valor" [(ngModel)]="servicos.valor">
+            </mat-form-field>
+            <div class="buttons">
+                <button class="mat-elevation-z8" mat-raised-button color="primary" (click)="update()">Atualizar</button>
+                <button class="mat-elevation-z8" mat-raised-button color="warn" (click)="cancel()">Cancelar</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

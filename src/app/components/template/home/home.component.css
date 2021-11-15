@@ -1,0 +1,44 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.geocar{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.toolbar{
+    height: 7%;
+}
+
+.sidenav{
+    width: 100%;
+    height: 86%;
+}
+.content{
+    overflow: hidden;
+}
+.inside{
+    background-color: rgb(29, 146, 185);
+    width: 15%;
+}
+
+.opcoes{
+    margin-top: 3rem;
+}
+
+.buttons{
+    width: 100%;
+    margin-top: .5rem;
+}
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+}
+mat-expansion-panel{
+    background-color: rgb(29, 146, 185);
+}

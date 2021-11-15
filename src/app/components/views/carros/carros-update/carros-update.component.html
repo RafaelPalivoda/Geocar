@@ -1,0 +1,31 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>
+            <span>Atualizando o Carro do Cliente</span>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form>
+            <mat-form-field appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <input matInput name="modelo" [(ngModel)]="carros.modelo">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Marca: </mat-label>
+                <input matInput name="marca" [(ngModel)]="carros.marca">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Placa: </mat-label>
+                <input matInput name="placa" [(ngModel)]="carros.placa">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Potencia Motor: </mat-label>
+                <input matInput name="potencia" [(ngModel)]="carros.potencia">
+            </mat-form-field>
+            <div class="buttons">
+                <button class="mat-elevation-z8" mat-raised-button color="primary" (click)="update()">Atualizar</button>
+                <button class="mat-elevation-z8" mat-raised-button color="warn" (click)="cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
